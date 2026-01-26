@@ -45,7 +45,7 @@ const people = [
     img: expertImg,
     phone: VITE_COMPANY_PHONE_MO_TAHIR,
     description:
-      "Specializing in design precision and finishing excellence, Mo. Tahir ensures every door reflects durability, detail, and modern aesthetics.",
+      "Expert in interior solution as modular kitchen,wardrobe ,tv panel and other interior works.",
   },
 ];
 
