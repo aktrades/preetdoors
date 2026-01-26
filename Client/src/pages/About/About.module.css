@@ -1,0 +1,41 @@
+.about {
+  background: var(--body-bg);
+  color: var(--text);
+}
+
+.hero {
+  padding: 5rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--header-bg),
+    var(--body-bg)
+  );
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary);
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+}
+
+.section {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.list {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1rem;
+}

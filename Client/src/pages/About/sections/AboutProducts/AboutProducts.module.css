@@ -1,0 +1,57 @@
+.productsSection {
+  padding: 5.5rem 1.5rem;
+  background: linear-gradient(
+    180deg,
+    var(--body-bg),
+    var(--header-bg)
+  );
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.content p {
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 2.25rem;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 2.4rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: black;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.cta:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}

@@ -1,0 +1,24 @@
+
+/* Hero.module.css */
+.hero {
+  min-height: 40vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+
+.cta {
+  background: var(--accent);
+  padding: 0.8rem 1.8rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+}
+

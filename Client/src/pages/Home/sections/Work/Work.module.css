@@ -1,0 +1,37 @@
+.work {
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--hover-bg)
+  );
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.2rem 2.4rem; 
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.link:hover {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.link:hover .arrow {
+  transform: translateX(4px);
+}
