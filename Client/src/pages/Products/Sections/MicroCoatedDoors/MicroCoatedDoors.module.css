@@ -67,6 +67,64 @@
 .imageWrapper:hover .image {
   transform: scale(1.08);
 }
+/* CTA Section */
+.contactBtn{
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+  justify-content: start;
+  margin-top: 20px;
+}
+/* WhatsApp Button */
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.85rem 1.7rem;
+  background-color: #25d366;
+  color: #0b1f14;
+
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+ 
+  transition: 
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+}
+.callBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid orange;
+
+  padding: 0.85rem 1.7rem;
+  color: var(--text);
+
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+ 
+  transition: 
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-2px); 
+  filter: brightness(1.05);
+}
+.callBtn:hover {
+  transform: translateY(-2px); 
+  filter: brightness(1.05); 
+  color: #0b1f14;
+  background-color: orange;
+}
 @media (max-width: 769px) {
   .imageWrapper{
     width: 400px;

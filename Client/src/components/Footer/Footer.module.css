@@ -16,6 +16,10 @@
 .brand h3 {
   font-size: 1.4rem;
 }
+.brand h4 {
+  font-size: .8rem;
+  padding: 6px 0;
+}
 
 .brand p {
   color: var(--muted);

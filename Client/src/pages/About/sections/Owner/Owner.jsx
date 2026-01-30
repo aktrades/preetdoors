@@ -19,16 +19,16 @@ const people = [
     img: chairmanImg,
     phone: VITE_COMPANY_PHONE_SECONDARY,
     description:
-      "With a strong vision for quality and long-term reliability, Mr. Visheshwar Sah leads the brand with a focus on trust, craftsmanship, and customer satisfaction.",
+      "Mr. Visheshwar Sah leads the company with a clear vision. He focuses on quality trust and long term customer satisfaction.",
   },
   {
     category: "Managing Partner",
     name: "Mr. Aman Kumar",
     role:
-      "PGDC – Wood & Panel Product Technology, MBA (Operations). 8+ years as Production Manager.",
+      "PGDC in Wood and Panel Product Technology MBA in Operations with over 8 years of experience as a Production Manager",
     img: Aman,
     description:
-      "Brings deep operational expertise and production leadership, ensuring efficiency, consistency, and quality across manufacturing processes.",
+      "He manages production and operations. He ensures smooth workflow consistent quality and timely delivery.",
   },
   {
     category: "Managing Partner",
@@ -36,18 +36,19 @@ const people = [
     role: "Managing Partner",
     img: Amit,
     description:
-      "Focused on business growth, coordination, and execution, aligning operations with long-term strategic goals.",
+      "He handles business growth planning and execution. He ensures the company moves forward with clear goals.",
   },
   {
     category: "Expert",
     name: "Mo. Tahir",
-    role: "Design & Craftsmanship",
+    role: "Design and Craftsmanship",
     img: expertImg,
     phone: VITE_COMPANY_PHONE_MO_TAHIR,
     description:
-      "Expert in interior solution as modular kitchen,wardrobe ,tv panel and other interior works.",
+      "He is an expert in interior solutions like modular kitchens wardrobes TV panels and other interior work.",
   },
 ];
+
 
 const Owner = () => {
   return (

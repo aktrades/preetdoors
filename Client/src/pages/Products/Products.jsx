@@ -17,9 +17,9 @@ const Products = () => {
         </p>
       </header>
 
+      <DigitalLaminateDoors />
       <MembraneDoors />
       <MicroCoatedDoors />
-      <DigitalLaminateDoors />
       <LaminateGrooveDoors />
       <LaminateGroovedProfileDoors />
       <ThreeDDoors />

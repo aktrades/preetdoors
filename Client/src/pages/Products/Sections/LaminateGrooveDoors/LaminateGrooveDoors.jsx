@@ -3,6 +3,10 @@ import styles from "./LaminateGrooveDoors.module.css";
 import LaminateGrooveDoorsImg from "../../../../assets/images/LaminateGrooveDoors.jpeg";
 
 const LaminateGrooveDoors = () => {
+  const { VITE_WHATSAPP_NUMBER, VITE_COMPANY_PHONE_PRIMARY } = import.meta.env;
+
+  const whatsappLink = `https://wa.me/${VITE_WHATSAPP_NUMBER}?text=${encodeURIComponent("I want to buy Laminate Groove  Doors")},`;
+  const callLink = `tel:${VITE_COMPANY_PHONE_PRIMARY}`;
   return (
     <motion.section
       className={styles.section}
@@ -20,6 +24,25 @@ const LaminateGrooveDoors = () => {
             Laminate groove doors are suitable for contemporary spaces that
             demand subtle detailing without compromising durability.
           </p>
+          <div className={styles.contactBtn}>
+            <h4>Book Now </h4>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappBtn}
+            >
+              WhatsApp Us
+            </a>
+            <a
+              href={callLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.callBtn}
+            >
+              Call Us
+            </a>
+          </div>
         </div>
 
         <div className={styles.imageWrapper}>

@@ -3,6 +3,11 @@ import styles from "./ThreeDDoors.module.css";
 import ThreeDDoorsImg from "../../../../assets/images/ThreeDDoors.jpg";
 
 const ThreeDDoors = () => {
+  const { VITE_WHATSAPP_NUMBER, VITE_COMPANY_PHONE_PRIMARY } = import.meta.env;
+
+  const whatsappLink = `https://wa.me/${VITE_WHATSAPP_NUMBER}?text=${encodeURIComponent("I want to buy 3D Doors")},`;
+  const callLink = `tel:${VITE_COMPANY_PHONE_PRIMARY}`;
+
   return (
     <motion.section
       className={styles.section}
@@ -16,10 +21,29 @@ const ThreeDDoors = () => {
           <span className={styles.kicker}>Door Type</span>
           <h2 className={styles.title}>3D Doors</h2>
           <p className={styles.description}>
-            3D doors are crafted to create a strong visual impact through layered
-            designs and textured finishes. They are ideal for spaces that demand
-            bold expression and premium appeal.
+            3D doors are crafted to create a strong visual impact through
+            layered designs and textured finishes. They are ideal for spaces
+            that demand bold expression and premium appeal.
           </p>
+          <div className={styles.contactBtn}>
+            <h4>Book Now </h4>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappBtn}
+            >
+              WhatsApp Us
+            </a>
+            <a
+              href={callLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.callBtn}
+            >
+              Call Us
+            </a>
+          </div>
         </div>
 
         <div className={styles.imageWrapper}>

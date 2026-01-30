@@ -26,6 +26,7 @@ const Footer = () => {
     VITE_SOCIAL_TWITTER,
     VITE_SOCIAL_INSTAGRAM,
     VITE_SOCIAL_FACEBOOK,
+    VITE_COMPANY_GSTIN,
   } = import.meta.env;
 
   return (
@@ -38,7 +39,10 @@ const Footer = () => {
       >
         {/* BRAND */}
         <div className={styles.brand}>
-          <h3>{VITE_COMPANY_SUBNAME}</h3>
+          <div>
+            <h3>{VITE_COMPANY_SUBNAME}</h3>
+            <h4>GSTIN/UIN: {VITE_COMPANY_GSTIN}</h4>
+          </div>
           <p>{VITE_COMPANY_TAGLINE}</p>
         </div>
 
@@ -105,11 +109,16 @@ const Footer = () => {
         </div>
 
         <div className={styles.copyRightContainer}>
-          <p className={styles.copyRight}>© {new Date().getFullYear()} {VITE_COMPANY_NAME}. All Right Reserved.</p>
-          <p className={styles.companyTag}>Built by{" "}
-          <a href={VITE_COMPANY_WEBSITE} target="_blank">
-            Pandit Soft Solution
-          </a></p>
+          <p className={styles.copyRight}>
+            © {new Date().getFullYear()} {VITE_COMPANY_NAME}. All Right
+            Reserved.
+          </p>
+          <p className={styles.companyTag}>
+            Built by{" "}
+            <a href={VITE_COMPANY_WEBSITE} target="_blank">
+              Pandit Soft Solution
+            </a>
+          </p>
         </div>
       </div>
     </footer>
